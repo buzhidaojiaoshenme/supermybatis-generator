@@ -51,8 +51,9 @@ public class CodeGenerator {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:postgresql://10.97.6.140:5432/dcg_datacenter?currentSchema=datacenter&serverTimezone=GMT+8&stringtype=unspecified");
-        dsc.setSchemaName("datacenter");
+        dsc.setUrl("jdbc:postgresql://10.97.6.140:5432/dcg_datacenter?currentSchema=transform&serverTimezone=GMT+8&stringtype=unspecified");
+        //!!!!!!记得修改模块名
+        dsc.setSchemaName("transform");
         dsc.setDriverName("org.postgresql.Driver");
         dsc.setUsername("a_dba_ludl4");
         dsc.setPassword("Asdf124^");
